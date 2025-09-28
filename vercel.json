@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "name": "login-signup-page",
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/improved-version/index.html"
+    },
+    {
+      "src": "/basic",
+      "dest": "/basic-version/index.html"
+    },
+    {
+      "src": "/improved",
+      "dest": "/improved-version/index.html"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
